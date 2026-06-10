@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advokatfirmaet Larsen, Surmulsen & Partnere</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+            color: #000;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .letterhead {
+            background: #1a1a1a;
+            color: white;
+            padding: 25px 40px;
+            border-bottom: 3px solid #b8860b;
+        }
+
+        .firm-name {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .firm-details {
+            font-size: 11px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        .content-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            float: left;
+            margin: 0 20px 20px 0;
+        }
+
+        .content {
+            padding: 50px 60px;
+            line-height: 1.9;
+        }
+
+        .reference-line {
+            text-align: right;
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .formal-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0 40px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .recipient-box {
+            margin: 30px 0;
+            padding: 20px;
+            background: #fafafa;
+            border-left: 3px solid #1a1a1a;
+        }
+
+        .legal-paragraph {
+            margin: 20px 0;
+            text-align: justify;
+            text-indent: 30px;
+        }
+
+        .section-heading {
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .facts-list {
+            margin: 20px 0 20px 40px;
+            list-style: none;
+            counter-reset: item;
+        }
+
+        .facts-list li {
+            counter-increment: item;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .facts-list li:before {
+            content: counter(item) ". ";
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .legal-ref {
+            font-style: italic;
+            color: #333;
+        }
+
+        .amount-box {
+            margin: 35px 0;
+            padding: 25px;
+            background: #f9f9f9;
+            border: 2px solid #1a1a1a;
+            text-align: center;
+        }
+
+        .amount-label {
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .amount-value {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin: 15px 0;
+        }
+
+        .payment-details {
+            margin: 25px 0;
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid #ddd;
+        }
+
+        .payment-details table {
+            width: 100%;
+            font-size: 13px;
+        }
+
+        .payment-details td {
+            padding: 8px 0;
+        }
+
+        .payment-details td:first-child {
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .deadline-notice {
+            margin: 30px 0;
+            padding: 20px;
+            background: #fff9e6;
+            border: 1px solid #b8860b;
+        }
+
+        .signature-block {
+            margin-top: 60px;
+        }
+
+        .signature-line {
+            border-top: 1px solid #000;
+            width: 300px;
+            margin: 50px 0 10px 0;
+        }
+
+        .signer-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .signer-title {
+            font-size: 12px;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 20px 40px;
+            font-size: 10px;
+            line-height: 1.6;
+            margin-top: 50px;
+        }
+
+        .disclaimer {
+            margin-top: 50px;
+            padding: 15px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            font-size: 9px;
+            text-align: center;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="letterhead">
+            <div class="firm-name">ADVOKATFIRMAET LARSEN, SURMULSEN & PARTNERE</div>
+            <div class="firm-details">
+                Strandvejen 142 • 2900 Hellerup • CVR: 38472615<br>
+                Tel: +45 39 15 47 82 • Fax: +45 39 15 47 83 • Email: juridisk@lsp-advokater.dk<br>
+                Medlem af Advokatsamfundet • Autoriseret advokatvirksomhed
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="reference-line">
+                Sagsnummer: 2026-0847-LSP/KF<br>
+                Advokat: Kristian Surmulsen (H)<br>
+                Dato: 10. juni 2026<br>
+                Før retsmøde: Se venligst sagsnummer
+            </div>
+
+            <img src="sure_advokater.png" alt="Firma Logo" class="content-logo">
+
+            <div class="formal-title">
+                Påkrav om betaling<br>
+                Potentielt retsligt efterspil
+            </div>
+
+            <div class="recipient-box">
+                <strong>SAGSØGTE:</strong><br>
+                Signe Sjøstrand<br>
+                <br>
+                <strong>SAGSØGER:</strong><br>
+                Simon Kolind Fuglsang<br>
+                <br>
+                <strong>VEDRØRENDE:</strong><br>
+                Krav på betaling i henhold til mundtlig aftale - Aftaleloven § 1, jf. § 6, stk. 1
+            </div>
+
+            <p class="legal-paragraph">
+                Undertegnede advokatfirma repræsenterer herved vor klient i en sag vedrørende manglende opfyldelse af aftaleforpligtelse.
+                Vi skal herved, på vegne af vor klient, fremsætte formelt påkrav om betaling af udestående fordring i henhold til
+                indgået mundtlig aftale mellem parterne.
+            </p>
+
+            <div class="section-heading">I. Sagsfremstilling og faktiske forhold</div>
+
+            <ul class="facts-list">
+                <li>
+                    Der blev den 9. juni 2026 indgået en skriftlig aftale mellem sagsøger og sagsøgte om levering af ydelse/vare
+                    mod betaling af vederlag på femten danske kroner (DKK 15,00). Aftalen er bindende i henhold til aftaleloven § 1,
+                    idet der foreligger tilbud, accept og tilstrækkelig aftalegrundlag.
+                </li>
+                <li>
+                    Sagsøger har opfyldt sin del af aftalen ved at levere den aftalte ydelse/vare rettidigt og i overensstemmelse
+                    med de aftalte specifikationer. Der foreligger således ikke misligholdelse fra sagsøgers side.
+                </li>
+                <li>
+                    Sagsøgte har på trods af gentagne mundtlige og digitale henvendelser undladt at indfri betalingsforpligtelsen.
+                    Der er således indtrådt væsentlig misligholdelse fra sagsøgtes side, jf. købelovens § 54, stk. 2, subsidiært
+                    efter almindelige obligationsretlige grundsætninger.
+                </li>
+                <li>
+                    Sagsøger har udvist betydelig tålmodighed og tilbageholdenhed, idet kravet ikke tidligere er blevet gjort
+                    gældende ad retslig vej. Nærværende skrivelse udgør en sidste mulighed for mindelig løsning, forinden sagen
+                    indbringes for de almindelige domstole.
+                </li>
+            </ul>
+
+            <div class="section-heading">II. Juridisk vurdering</div>
+
+            <p class="legal-paragraph">
+                I henhold til <span class="legal-ref">aftaleloven § 1</span> foreligger der en gyldig og bindende aftale, når der er opnået
+                enighed om aftalens væsentligste vilkår. Det forhold, at aftalen er mundtlig, fratager den ikke dens retlige bindingsvirkning.
+                Dette følger af dansk rets grundlæggende princip om aftalefrihed og formfrihed, medmindre lovgivningen specifikt foreskriver
+                skriftlighedskrav.
+            </p>
+
+            <p class="legal-paragraph">
+                Sagsøgtes undladelse af at indfri betalingsforpligtelsen udgør en klar misligholdelse af aftalen. I henhold til almindelige
+                obligationsretlige principper har sagsøger derfor ret til at kræve opfyldelse af aftalen, subsidiært til at kræve erstatning
+                for det led, sagsøger har lidt ved sagsøgtes misligholdelse.
+            </p>
+
+            <p class="legal-paragraph">
+                Endvidere bemærkes det, at der i henhold til <span class="legal-ref">renteloven § 3, stk. 1</span>, påløber morarenter fra
+                forfaldstidspunktet. Vor klient har dog indtil videre valgt at se bort fra rentekrav af kulancehensyn.
+            </p>
+
+            <div class="section-heading">III. Kravets størrelse og specifikation</div>
+
+            <div class="amount-box">
+                <div class="amount-label">SAMLET KRAV TIL BETALING</div>
+                <div class="amount-value">DKK 15,00</div>
+                <div style="font-size: 12px; color: #666; margin-top: 10px;">
+                    (femten kroner og nul øre)
+                </div>
+            </div>
+
+            <div class="payment-details">
+                <table>
+                    <tr>
+                        <td>Hovedkrav (aftalt vederlag):</td>
+                        <td>DKK 15,00</td>
+                    </tr>
+                    <tr>
+                        <td>Påløbne morarenter:</td>
+                        <td>DKK 0,00 (frafaldet af kulance)</td>
+                    </tr>
+                    <tr>
+                        <td>Rykkergebyr:</td>
+                        <td>DKK 0,00 (frafaldet af kulance)</td>
+                    </tr>
+                    <tr style="border-top: 2px solid #000; font-weight: bold; font-size: 14px;">
+                        <td style="padding-top: 12px;">I ALT TIL BETALING:</td>
+                        <td style="padding-top: 12px;">DKK 15,00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section-heading">IV. Betalingsbetingelser og frist</div>
+
+            <div class="deadline-notice">
+                <p style="margin-bottom: 15px; font-weight: bold;">
+                    Beløbet skal indbetales senest 14 dage fra dato, dvs. senest den 24. juni 2026.
+                </p>
+                <p style="margin-bottom: 10px;"><strong>Betalingsmuligheder:</strong></p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li>MobilePay til sagsøger (nummer vil blive oplyst ved henvendelse)</li>
+                    <li>Bankoverførsel (kontooplysninger fremsendes efter anmodning)</li>
+                    <li>Kontant betaling til sagsøger mod kvittering</li>
+                </ul>
+            </div>
+
+            <p class="legal-paragraph">
+                Såfremt betaling ikke er modtaget inden fristens udløb, vil sagen uden yderligere varsel blive indbragt for retten med påstand om:
+            </p>
+
+            <ul style="margin: 20px 0 20px 60px; text-align: justify;">
+                <li style="margin-bottom: 10px;">Betaling af hovedkravet på DKK 15,00</li>
+                <li style="margin-bottom: 10px;">Procesrente fra sagens anlæg til betaling sker</li>
+                <li style="margin-bottom: 10px;">Sagsomkostninger, herunder advokathonorar efter regning</li>
+                <li style="margin-bottom: 10px;">Retsafgift og andre omkostninger forbundet med retssagen</li>
+            </ul>
+
+            <p class="legal-paragraph">
+                Vi skal venligst anmode om, at betaling foretages rettidigt, således at yderligere omkostninger og ulemper kan undgås for begge
+                parter. Vor klient har intet ønske om at eskalere sagen yderligere, men vil ikke tøve med at forfølge sit berettigede krav ad
+                retslig vej, såfremt det måtte vise sig nødvendigt.
+            </p>
+
+            <div class="section-heading">V. Afslutning</div>
+
+            <p class="legal-paragraph">
+                Nærværende skrivelse skal betragtes som et sidste påkrav før eventuel retssag. Vi opfordrer indtrængende til, at De kontakter
+                undertegnede advokatfirma hurtigst muligt med henblik på afklaring af betalingsforpligtelsen.
+            </p>
+
+            <p style="margin: 30px 0 60px 0;">
+                Med venlig hilsen
+            </p>
+
+            <div class="signature-block">
+                <div class="signer-name">Kristian Surmulsen</div>
+                <div class="signer-title">Advokat (H), Partner</div>
+                <div class="signer-title">Larsen, Surmulsen & Partnere</div>
+            </div>
+
+            <div style="margin-top: 40px; font-size: 11px; color: #666;">
+                <strong>Bilag:</strong> Ingen<br>
+                <strong>Kopi til:</strong> Sagsøger
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <strong>ADVOKATFIRMAET LARSEN, SURMULSEN & PARTNERE</strong><br>
+            Strandvejen 142, 2900 Hellerup | Tel: +45 39 15 47 82 | Email: juridisk@lsp-advokater.dk<br>
+            CVR: 38472615 | Autoriseret advokatvirksomhed under tilsyn af Advokatnævnet<br>
+            Omfattet af advokatlovens regler om god advokatskik og tavshedspligt
+        </div>
+    </div>
+</body>
+</html>
